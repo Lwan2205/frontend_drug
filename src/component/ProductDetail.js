@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import SummaryApi from '../common';
 import '../assets/css/ProductDetail.css';
-import { get } from 'mongoose';
+
 
 const ProductDetail = () => {
     const { productId } = useParams();
