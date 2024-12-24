@@ -60,7 +60,7 @@ const Header = () => {
     // Hàm xử lý tìm kiếm category theo tên và điều hướng đến trang kết quả
     const handleCategoryNameSearch = () => {
         if (searchTerm.trim() !== '') {
-            fetch(`http://localhost:8000/api/products/category/search?name=${encodeURIComponent(searchTerm)}`)
+            fetch(`https://drug-backend-kxcu.onrender.com/api/products/category/search?name=${encodeURIComponent(searchTerm)}`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {

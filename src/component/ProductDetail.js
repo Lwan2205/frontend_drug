@@ -38,7 +38,7 @@ const ProductDetail = () => {
     useEffect(() => {
         const fetchRelatedProducts = async () => {
             try {
-                const response = await fetch(`http://localhost:8000/api/products/related/${productId}`, {
+                const response = await fetch(`https://drug-backend-kxcu.onrender.com/api/products/related/${productId}`, {
                     method: 'get',
                     credentials: 'include'
                 });

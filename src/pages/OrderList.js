@@ -46,7 +46,7 @@ const OrderList = () => {
 
     const cancelOrder = async (orderId) => {
         try {
-            const response = await fetch(`http://localhost:8000/api/orders/${orderId}`, {
+            const response = await fetch(`https://drug-backend-kxcu.onrender.com/api/orders/${orderId}`, {
                 method: 'DELETE',
                 credentials: 'include',
             });

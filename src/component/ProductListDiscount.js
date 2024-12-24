@@ -52,7 +52,7 @@ const ProductListDiscount = () => {
     useEffect(() => {
         const fetchProductsWithDiscount = async () => {
             try {
-                const response = await fetch(`http://localhost:8000/api/products/allDiscout?page=${currentPage}&limit=${productsPerPage}`, {
+                const response = await fetch(`https://drug-backend-kxcu.onrender.com/api/products/allDiscout?page=${currentPage}&limit=${productsPerPage}`, {
                     method: 'GET',
                     credentials: 'include',
                 });

@@ -57,7 +57,7 @@ const ProductListByBrand = () => {
         const fetchProductsByBrand = async () => {
             setLoading(true);
             try {
-                const response = await fetch(`http://localhost:8000/api/products/brands/${brandId}?page=${currentPage}&limit=${productsPerPage}`, {
+                const response = await fetch(`https://drug-backend-kxcu.onrender.com/api/products/brands/${brandId}?page=${currentPage}&limit=${productsPerPage}`, {
                     method: 'GET',
                     credentials: 'include',
                 });
