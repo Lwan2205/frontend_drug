@@ -58,7 +58,7 @@ const ProductList = () => {
     useEffect(() => {
         const fetchProductsByCategory = async () => {
             try {
-                const response = await fetch(`http://localhost:8000/api/products/category/${categoryId}?page=${currentPage}&limit=${productsPerPage}`, {
+                const response = await fetch(`https://drug-backend-kxcu.onrender.com/api/products/category/${categoryId}?page=${currentPage}&limit=${productsPerPage}`, {
                     method: 'GET',
                     credentials: 'include',
                 });
